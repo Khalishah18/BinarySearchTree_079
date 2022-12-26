@@ -125,6 +125,19 @@ namespace BinarySearchTree
                 Console.WriteLine("4. Perform postorder traversal");
                 Console.WriteLine("5. EXIT");
                 Console.WriteLine("\nEnter Your Choice (1-5): ");
+                char ch = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine();
+                switch (ch)
+                {
+                    case '1':
+                        {
+                            Console.WriteLine("Enter a word: ");
+                            string word = Console.ReadLine();
+                            x.insert(word);
+                        }
+                        break;
+
+                }
             }
         }
     }
