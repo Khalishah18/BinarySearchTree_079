@@ -52,7 +52,10 @@ namespace BinarySearchTree
                     if (string.Compare(element, parent.info) < 0)
                         parent.lchild = tmp;
                 }
-
+                else
+                {
+                    parent.rchild = tmp;
+                }
             }
 
         }
