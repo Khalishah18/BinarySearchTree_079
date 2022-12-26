@@ -141,6 +141,11 @@ namespace BinarySearchTree
                             x.inorder(x.ROOT);
                         }
                         break;
+                    case '3':
+                        {
+                            x.preorder(x.ROOT);
+                        }
+                        break;
 
                 }
             }
