@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,9 +27,28 @@ namespace BinarySearchTree
     {
         public node ROOT;
 
-        public BinarySearchTree()
+        public BinaryTree()
         {
             ROOT = null; //initializing root to null
+        }
+        public void insert(string element) //insert a root the binary
+        {
+            node tmp, parent = null, currentnode = null;
+            find(element, ref parent, ref currentnode);
+            if ((currentnode != null))
+            {
+                Console.WriteLine("Duplicate words not allowed");
+                return;
+            }
+            else //if the specified node is not present
+            {
+                tmp = new node(element, null, null);
+                if(parent == null)
+                {
+                    ROOT = tmp;
+                }
+            }
+
         }
     }
     class Program
