@@ -47,6 +47,12 @@ namespace BinarySearchTree
                 {
                     ROOT = tmp;
                 }
+                else if (string.Compare(element,parent.info) <0)
+                {
+                    if (string.Compare(element, parent.info) < 0)
+                        parent.lchild = tmp;
+                }
+
             }
 
         }
