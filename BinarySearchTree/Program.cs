@@ -116,6 +116,16 @@ namespace BinarySearchTree
         static void Main(string[] args)
         {
             BinaryTree x = new BinaryTree();
+            while(true)
+            {
+                Console.WriteLine("\nMenu");
+                Console.WriteLine("1. Implement insert operation");
+                Console.WriteLine("2. Perform inorder traversal");
+                Console.WriteLine("3. Perform preorder traversal");
+                Console.WriteLine("4. Perform postorder traversal");
+                Console.WriteLine("5. EXIT");
+                Console.WriteLine("\nEnter Your Choice (1-5): ");
+            }
         }
     }
 }
