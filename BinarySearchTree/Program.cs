@@ -113,11 +113,9 @@ namespace BinarySearchTree
                 Console.WriteLine(ptr.info + "");
             }
         }
-    }
-    class Program
-    {
         static void Main(string[] args)
         {
+            BinaryTree x = new BinaryTree();
         }
     }
 }
